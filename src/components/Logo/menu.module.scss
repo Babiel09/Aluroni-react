@@ -1,0 +1,19 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.menu {
+  padding: 20px $padding-horizontal; // Adicione um ponto e vírgula aqui
+  margin-left: -10px; // Ajuste este valor conforme necessário para mover a imagem mais para a esquerda
+  @media (max-width: $desktop_xsm) {
+    padding: 20px $padding-horizontal-mobile; // Adicione um ponto e vírgula aqui
+    margin-left: -10px; // Ajuste este valor conforme necessário para visualizações móveis
+  }
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 20px $padding-horizontal-sm; // Adicione um ponto e vírgula aqui
+    margin-left: -10px; // Ajuste este valor conforme necessário para visualizações de desktop pequenas
+  }
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 20px $padding-horizontal-md; // Adicione um ponto e vírgula aqui
+    margin-left: -10px; // Ajuste este valor conforme necessário para visualizações de desktop médias
+  }
+}
